@@ -16,7 +16,7 @@ public class Programa3 {
             i = i + 1;
             input[i] = linha;
             linha = buff.readLine();
-            }while (linha != null)
+            }while (linha != null);
             String[] input1 = input[0].split(" ");
             String[] input2 = input[1].split(" ");
             int[] input1a = new int[input1.length];
