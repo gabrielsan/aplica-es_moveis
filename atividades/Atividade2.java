@@ -28,7 +28,7 @@ public class Atividade2 {
                 vendedores[j] = Integer.parseInt(input[j]);
                 input[j] = "0";
             } catch (Exception v) {
-                System.out.println("estão faltando ligações");
+                System.out.println("está faltando ligações");
             }
         }
         while (fim == 1) {
@@ -46,7 +46,7 @@ public class Atividade2 {
                                 vendedores[j] = Integer.parseInt(input[k]);
                                 input[k] = "0";
                             } catch (Exception v) {
-                            System.out.println("estão faltando ligações");
+                            System.out.println("está faltando ligações");
                         }
                     }
                 }
