@@ -15,11 +15,11 @@ public class Atividade2 {
         String[] input1a = input1.split(" ");
         String[] input = new String[Integer.parseInt(input1a[1])];
         int i = -1;
-        while ( linha != null) {
+        do{
             i = i + 1;
             input[i] =  linha;
             linha = buff.readLine();
-        }
+        } while ( linha != null);
         int[] vendedores = new int[Integer.parseInt(input1a[0])];
         int[] desempenho = new int[Integer.parseInt(input1a[0])];
         int fim = 1;
