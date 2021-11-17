@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Atividade3 {
+public class Programa3 {
     public static void main(String args[]) throws IOException {
         FileInputStream pastadoarquivo = new FileInputStream("C:\\Users\\Mariza\\Desktop\\Testes\\Inputs.txt");
         InputStreamReader ainput = new InputStreamReader(pastadoarquivo);
@@ -12,11 +12,11 @@ public class Atividade3 {
         String linha = buff.readLine();
         String[] input = new String[2];
         int i = -1;
-        while (linha != null){
+         do{
             i = i + 1;
             input[i] = linha;
             linha = buff.readLine();
-            }
+            }while (linha != null)
             String[] input1 = input[0].split(" ");
             String[] input2 = input[1].split(" ");
             int[] input1a = new int[input1.length];
