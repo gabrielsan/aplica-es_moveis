@@ -12,27 +12,27 @@ public class Atividade1 {
         String linha = buff.readLine();
         String[] input = new String[3];
         int i = -1;
-        while (linha != null) {
+        while (linha != null);{
             i = i + 1;
             input[i] = line;
             linha = buff.readLine();
         }
         String[] pedaco = input[2].split(" ");
-        int media = 0;
+        int med = 0;
         int TamanhoMaximo = 0;
         for (int k = 0; k < pedaco.length; k++) {
-            media += Integer.parseInt(pedaco[k]);
+            med += Integer.parseInt(pedaco[k]);
         }
-        media = media / Integer.parseInt(input[0]);
-        while (media > 0) {
+        med = med / Integer.parseInt(input[0]);
+        while (med > 0) {
             for (int k = 0; k < pedaco.length; k++) {
-                TamanhoMaximo += Integer.parseInt(pedaco[k]) / media;
+                TamanhoMaximo += Integer.parseInt(pedaco[k]) / med;
             }
             if (TamanhoMaximo == Integer.parseInt(input[0])) {
-                System.out.println(media);
+                System.out.println(med);
                 break;
             } else {
-                media = media - 1;
+                med = med - 1;
                 TamanhoMaximo = 0;
             }
         }
